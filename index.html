@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project I</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
     <header>
@@ -20,8 +24,8 @@
     <main>
         <section id="home">
             <div>
-                <h1>Hello My Name Is Salma</h1>
-                <h2>this is my portfolio </h2>
+                <h1 class="title">Hello, I'm Salma</h1>
+                <h3>A full Stack Developer </h3>
             </div>
         </section>
 
@@ -30,17 +34,19 @@
             <p>Full Stack Developer specializing in creating robust and high-performance web
                 applications. With diverse experience in both front-end and back-end development, I
                 bring a holistic approach to every project, combining creativity, perseverance, and
-                ingenuity to tackle technical challenges</p>        
+                ingenuity to tackle technical challenges</p>
         </section>
 
         <section id="work">
             <h2>My Work</h2>
-            <table border="1">
+            <table>
                 <thead>
-                        <td>Company name</td>
-                        <td>Role</td>
-                        <td>description</td>
-                        <td>period</td>
+                    <tr>
+                        <th>Company name</th>
+                        <th>Role</th>
+                        <th>description</th>
+                        <th>period</th>
+                    </tr>
                 </thead>
                 <tbody>
                     <tr>
@@ -60,34 +66,40 @@
         </section>
 
         <section id="resume">
-            <h2>My Resume</h2>                
-            <object data="/CV_SALMA_EL MOKHAREK.pdf" type="application/pdf" width="80%" height="auto">
-                <p>Your browser does not support PDFs. <a href="/CV_SALMA_EL MOKHAREK.pdf">Download the PDF</a>.</p>
-            </object>
+            <h2>My Resume</h2>
+            <div class="logos">
+                <img src="/assets/html.png" alt="html">
+                <img src="/assets/css-3.png" alt="css">
+                <img src="/assets/bootstrap.png" alt="bootstrap">
+                <img src="/assets/tailwind.png" alt="tailwind">
+                <img src="/assets/nodejs.png" alt="nodejs">
+                <img src="/assets/sql-server.png" alt="sql">
+                <img src="/assets/postgresql.png" alt="postgresql">
+                <img src="/assets/angular.png" alt="angular">
+            </div>
+
                 
         </section>
 
         <section id="contact">
             <h2>Contact Me</h2>
             <form action="">
-                <div>
+                <div class="mail">
                     <label for="mail">Mail</label>
                     <input type="mail" placeholder="exemple@gmail.com">
                 </div>
-                <div>
+                <div class="msg">
                     <label for="msg">Message</label>
-                    <textarea name="msg" id="msg" cols="20" rows="10"></textarea>
+                    <textarea name="msg" id="msg" cols="15" rows="5" ></textarea>
                 </div>
                 <button type="submit">Send The Messege</button>
-
-
             </form>
         </section>
     </main>
 
     <footer>
         <h4>Social media</h4>
-        <ul type="square">
+        <ul>
             <li><a href="https://github.com/" target="_blank" rel="noopener">Github</a></li>
             <li><a href="https://facebook.com/" target="_blank" rel="noopener">Facebook</a></li>
             <li><a href="https://x.com/" target="_blank" rel="noopener">Twitter</a></li>
